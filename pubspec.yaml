@@ -1,0 +1,78 @@
+name: lgbtq_matrimony_app
+description: LGBTQ+ Matrimony App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Routing and page transitions
+  go_router: ^13.2.0
+  page_transition: ^2.1.0
+
+  # Fonts
+  google_fonts: ^6.1.0
+
+  # State management (optional)
+  provider: ^6.1.1
+
+  # HTTP client
+  http: ^1.2.1
+
+  # Dotenv for environment variables
+  flutter_dotenv: ^5.1.0
+
+  # Nice animations
+  flutter_animate: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+
+  # Splash screen generation
+  flutter_native_splash: ^2.4.4
+
+  # App icons
+  flutter_launcher_icons: ^0.14.3
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/logo.jpg
+    - assets/logo_dark.jpg
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Poppins-SemiBold.ttf
+  #         weight: 600
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo.jpg
+  color_dark: "#000000"
+  image_dark: assets/logo_dark.jpg
+  android_12:
+    image: assets/logo.jpg
+    icon_background_color: "#ffffff"
+  web: false
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpg"
+  adaptive_icon_background: "#ffffff"
